@@ -27,3 +27,15 @@ occurrences('fleep floop', 'e')   # returns 2
 occurrences('fleep floop', 'p')   # returns 2
 occurrences('fleep floop', 'ee')  # returns 1
 occurrences('fleep floop', 'fe')  # returns 0
+
+# Challenge 4
+
+def product(*args):
+  product = 1
+  for x in args:
+    product *= x
+  return product
+
+print(product(-1, 4)) # returns -4
+print(product(2, 5, 5)) # returns 50
+print(product(4, 0.5, 5)) # returns 10.0
